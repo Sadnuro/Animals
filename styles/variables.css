@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+:root {
+    --logo-font-ephesis:  'Ephesis', cursive;
+    --primary-font-amatic: 'Amatic SC', cursive;
+    --second-font-merriweather: 'Merriweather', serif;
+
+    --primary-color: rgb(33, 37, 41);
+    --second-color: rgb(81, 255, 255);
+}
