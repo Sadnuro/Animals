@@ -30,22 +30,32 @@ header p .fa-hippo{
 }
 header nav ul {
     width: 350px;
-    height: 50px;
-
-
-    color: white;
-
+    height: 70px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-between;
 }
 header nav ul li {
+    /* width: 150px; */
+    height: 100%;
+    list-style: none;
+}
+header nav ul li a{
+    padding: 20px 10px;
     font-family: var(--second-font-merriweather);
     font-weight: 400;
-    list-style: none;
-    line-height: 50px;
+    line-height: 70px;
     font-size: 15px;
+
+    text-align: center;
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+header nav ul li>a:hover{
+    background-color: var(--second-color);
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 #home {
@@ -70,7 +80,7 @@ header nav ul li {
 
     border: 2px solid white;
     border-radius: 10px;
-    background-color: rgb(33, 37, 41, 0.4);
+    background-color: rgb(33, 37, 41, 0.6);
 
     display: flex;
     flex-flow: column nowrap;
@@ -97,14 +107,18 @@ header nav ul li {
 }
 #home #home-info-container #home-singup-btn {
     margin-top: 30px;
-    width: 100px;
+    width: 130px;
     height: 40px;
     border-radius: 10px;
 
-
     background: transparent;
     font-family: var(--primary-font-amatic);
-    font-size: 20px;
+    font-size: 22px;
+    letter-spacing: 1px;
     font-weight: 600;
     color: white;
+}
+#home #home-info-container #home-singup-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--second-color);
 }

@@ -1,0 +1,92 @@
+@import './variables.css';
+#about {
+    margin: 0;
+}
+#about .about-section{
+    width: 100%;
+    padding: 100px 200px;
+}
+#about .who-we-are {
+   margin: 0;
+}
+#about h2 {
+    font-family: var(--primary-font-amatic);
+    line-height: 50px; 
+    font-size:  45px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#about h3 {
+    font-family: var(--primary-font-amatic);
+    line-height: 40px; 
+    font-size:  35px;
+    text-align: center;
+    margin-top: 20px;
+    /* margin-bottom: 50px; */
+}
+#about h5 {
+    font-family: var(--primary-font-amatic);
+    line-height: 25px; 
+    font-size:  20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#about .who-we-are .container-about{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px;
+}
+#about .who-we-are .container-about img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+#about .who-we-are .container-about p{
+    width: 50%;
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    font-family: var(--second-font-merriweather);
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+#about .what-we-do {
+    background-color: var( --third-color);
+}
+
+#about .what-we-do .container-actions{
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+
+.actions {
+    margin: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+ .action-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.what-we-do p {
+    font-family: var(--second-font-amatic);
+    line-height: 25px; 
+    font-size:  20px;
+    text-align: center;
+    margin-top: 5px;
+}
