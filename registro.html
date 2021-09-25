@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+</head>
+<body>
+    <form action="#">
+        <label for="fullname">Nombre completo:</label> <br>
+        <input type="text" id="fullname"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email"><br>
+
+        <label for="city">Ciudad:</label> <br>
+        <select name="cities" id="city">
+            <option value="0">Seleccione ciudad</option>
+            <option value="1">Armenia, Quindio</option>
+            <option value="2">Barranquilla, Atlantico</option>
+            <option value="3">Bogota, Cundinamarca</option>
+            <option value="4">Bucaramanga, Santander</option>
+        </select> <br>
+
+        <label for="phone">Celular:</label> <br>
+        <input type="tel"> <br>
+
+        <label for="animals-category">Animales de interes:</label> <br>
+        <select name="categories" id="">
+            <option value="0">Seleccione categoria</option>
+            <option value="1">Aves</option>
+            <option value="2">Caninos</option>
+            <option value="3">Felinos</option>
+            <option value="4">Peces y animales acuaticos</option>
+            <option value="5">Prehistoricos</option>
+            <option value="6">Extintos</option>
+            <option value="7">En via de extincion</option>
+        </select> <br> 
+
+        <input type="checkbox" id="data-usage" required=true> <label for="data-usage">Acepto teminos y condiciones en tratamiento de datos</label> <br>
+
+        <button type="reset">Limpiar</button>
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>
