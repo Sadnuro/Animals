@@ -42,10 +42,11 @@ header nav ul li {
 }
 header nav ul li a{
     padding: 20px 10px;
-    font-family: var(--second-font-merriweather);
+    /* font-family: var(--second-font-merriweather); */
+    font-family: var(--primary-font-amatic);
     font-weight: 400;
     line-height: 70px;
-    font-size: 15px;
+    font-size: 20px;
 
     text-align: center;
     color: white;
@@ -56,6 +57,7 @@ header nav ul li>a:hover{
     background-color: var(--second-color);
     color: var(--primary-color);
     font-weight: bold;
+    text-decoration: 2px underline;
 }
 
 #home {
@@ -112,13 +114,22 @@ header nav ul li>a:hover{
     border-radius: 10px;
 
     background: transparent;
+
+}
+#home #home-info-container #home-singup-btn  a{
+    padding: 10px 22px;
     font-family: var(--primary-font-amatic);
     font-size: 22px;
     letter-spacing: 1px;
+    text-decoration: none;
     font-weight: 600;
     color: white;
 }
+#home #home-info-container #home-singup-btn  a:hover{
+    color: var(--primary-color);
+    text-decoration: 2px underline;
+}
 #home #home-info-container #home-singup-btn:hover {
-    background-color: var(--primary-color);
-    color: var(--second-color);
+    background-color: var(--second-color);
+    transition: 0.5s;
 }
