@@ -6,9 +6,6 @@
     width: 100%;
     padding: 100px 200px;
 }
-#about .who-we-are {
-   margin: 0;
-}
 #about h2 {
     font-family: var(--primary-font-amatic);
     line-height: 50px; 
@@ -33,29 +30,66 @@
     margin-top: 5px;
 }
 
+#about .who-we-are {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+ }
+ #about .who-we-are img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
 #about .who-we-are .container-about{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+    flex-flow: column nowrap;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
+    padding: 0 0;
 }
-#about .who-we-are .container-about img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+#about .who-we-are .container-about h2{
+    margin-top: 55px;
+    margin-bottom: 0;
 }
-#about .who-we-are .container-about p{
-    width: 50%;
+#about .who-we-are div.container-hippo {
+    width: 100%;
+    height: 350px;
+    background-color: var(--primary-color);
+}
+#about .who-we-are .fa-hippo {
+    width: 100%;
+    height: 70px;
+
+    margin-bottom: 50px;
+
+    border-top: 2px solid var(--second-color);
+    border-bottom: 2px solid var(--second-color);
 
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 50px;
+    font-size: 40px;
+    color: var(--second-color)
+}
+
+#about .who-we-are .container-about p.about-details{
+    width: 100%;
+    padding: 0 100px;
 
     font-family: var(--second-font-merriweather);
     line-height: 25px;
     font-size: 18px;
     font-weight: 300;
     text-align: center;
+    color: white;
 }
 
 

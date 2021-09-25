@@ -10,12 +10,17 @@ header {
     height: 70px;
     padding: 0 150px 0 150px;
 
+    border-bottom: 2px solid var(--second-color);
     background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
 
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
+
+    z-index: 3;
 }
 header p#logo{
     font-family: var( --logo-font-ephesis);
@@ -65,15 +70,16 @@ header nav ul li>a:hover{
     height: 550px;
     position: relative;
 
-    background-image: url('../images/paisaje-lago.jpg');
+    /* background-image: url('../images/paisaje-lago.jpg'); */
+    background-image: url('../images/turtle_and_man.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 #home #home-info-container {
     width: 600px;
