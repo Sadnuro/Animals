@@ -1,6 +1,6 @@
 @import './variables.css';
 #galery {
-    padding: 100px 250px;
+    padding: 100px 100px;
     background-color: var(--primary-color);
 }
 #galery h2{

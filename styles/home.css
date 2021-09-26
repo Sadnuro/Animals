@@ -22,7 +22,7 @@ header {
 
     z-index: 3;
 }
-header p#logo{
+#logo{
     font-family: var( --logo-font-ephesis);
     line-height: 50px;
     font-size: 50px;
