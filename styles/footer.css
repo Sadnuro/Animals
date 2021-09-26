@@ -1,0 +1,86 @@
+footer {
+    width: 100%;
+    height: 1200px;
+
+    padding-top: 600px;
+
+    background-image: url('../images/tigger.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer #contact-us-continer{
+    padding: 0 250px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items:flex-start;  
+    justify-content: space-around;  
+}
+
+footer .details {
+    width: 350px;
+    margin-right: 50px;
+    position: relative;
+}
+footer .details .logo {
+    font-size: 40px;
+    color: white;
+
+    border-bottom: 2px solid var(--second-color);
+}
+/* footer .details .logo span{
+    color: var(--second-color);
+} */
+footer .details .detail-text {
+    margin-top: 30px;
+    font-size: 18px;
+    color: white;
+}
+
+footer form {
+    width: 350px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: left; */
+
+}
+
+footer form label {
+    margin-top: 10px;
+
+
+    font-family: var(--primary-font-amatic);
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 500;
+
+    color: white;
+}
+
+footer form input {
+    height: 30px;
+    padding-left: 15px;
+    
+    font-family: var(--second-font-merriweather);
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-color);
+
+    /* outline: 2px solid var(--second-color); */
+    outline: none;
+}
+
+footer form button {
+    width: 80px;
+    height: 40px;
+
+    font-family: var(--primary-font-amatic);
+    line-height: 30px;
+    font-size: 20px;
+    color: white;
+    background: transparent;
+ 
+}

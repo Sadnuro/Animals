@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/home.css">
-    <link rel="stylesheet" href="./styles/about.css">
-    <link rel="stylesheet" href="./styles/galery.css">
+
     <script src="https://kit.fontawesome.com/58c568702d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Animals</title>
 </head>
 <body>
     <header>
-        <p id="logo"><i class="fas fa-hippo"></i> Animals</p>
+        <p id="logo" class="logo"><i class="fas fa-hippo"></i> Animals</p>
         <nav>
             <ul>
                 <li><a href="registro.html">Registrarse</a></li>
@@ -34,7 +33,7 @@
             <div class="about-section who-we-are">
                 <img src="./images/puerco_spin_2.jpg" alt="">
                 <div class="container-about">
-                    <h2>QUE  ES  <span id="logo">Animals</span>  ?</h2>
+                    <h2>QUE  ES  <span class="logo">Animals</span>  ?</h2>
                     <div class="container-hippo">
                         <i class="fas fa-hippo"></i>
                         <p class="about-details">
@@ -119,12 +118,34 @@
 
             </div>
         </section>
-        <section id="contact-me">
-            <p>This section is different to sing up form</p>
-        </section>
     </main>
     <footer>
+        <div id="contact-us-continer">
+            <div class="details">
+                <p class="logo">Animals <span>| Support contact</span></p>
+                <p class="detail-text">
+                    Contactanos y cuentanos que te parecen nuestros servicios. 
+                    <br> <br>
+                    Recibiremos un mensaje directo a nuestros canales de atencion; no tardaremos en responderte.
+                </p>
+            </div>
+            <form action="#" class="contact-us">
+                <label for="fullname">Nombre completo*</label>
+                <input id="fullname" type="text" placeholder="Maria Apellido">
 
+                <label for="email">Email*</label>
+                <input id="email" type="email" placeholder="Maria@email.com">
+
+                <label for="comment">Cuentanos: </label>
+                <textarea name="comment" id="comment" cols="40" rows="5" placeholder="comment..."></textarea>
+
+                <button type="submit">CONTACTAR</button>
+
+            </form>
+        </div>
+        <div class="footer">
+            Copyright | Dev. Sadith Nunez R
+        </div>
     </footer>
 </body>
 </html>
