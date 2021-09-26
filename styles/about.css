@@ -37,6 +37,7 @@
     padding: 0;
     display: grid;
     grid-template-columns: 50% 50%;
+    background-color: var(--primary-color);
     
  }
  #about .who-we-are img {
@@ -55,6 +56,7 @@
 #about .who-we-are .container-about h2{
     margin-top: 55px;
     margin-bottom: 0;
+    color: var(--second-color);
 }
 #about .who-we-are div.container-hippo {
     width: 100%;
@@ -76,7 +78,7 @@
     align-items: center;
 
     line-height: 50px;
-    font-size: 40px;
+    font-size: 50px;
     color: var(--second-color)
 }
 
