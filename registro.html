@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Formulario Registro</title>
 </head>
 <body>
-    <form action="#">
-        <label for="fullname">Nombre completo:</label> <br>
+    <form id="sing-up" action="#">
+        <label for="fullname">Nombre completo*</label> <br>
         <input type="text" id="fullname"><br>
 
-        <label for="email">Email:</label><br>
+        <label for="email">Email*</label><br>
         <input type="email" id="email"><br>
+
+        <label for="confirm-email">Confirmar correo*</label> <br>
+        <input id="campoConfirmarCorreo" type="email"> <br>
+
+        <label for="country">Pais*</label> <br>
+        <input id="campoPais" type="text"> <br>
 
         <label for="city">Ciudad:</label> <br>
         <select name="cities" id="city">

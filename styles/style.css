@@ -1,5 +1,506 @@
-@import './variables.css';
-@import './home.css';
-@import './about.css';
-@import './galery.css';
-@import './footer.css';
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --logo-font-ephesis: "Ephesis", cursive;
+  --primary-font-amatic: "Amatic SC", cursive;
+  --second-font-merriweather: "Merriweather", serif;
+  --primary-color: rgb(33, 37, 41);
+  --second-color: rgb(81, 255, 255);
+  --third-color: rgba(235, 232, 232, 0.883);
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  padding: 0 150px 0 150px;
+  border-bottom: 2px solid var(--second-color);
+  background-color: var(--primary-color);
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+}
+
+.logo {
+  font-family: var(--logo-font-ephesis);
+  line-height: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+header p .fa-hippo {
+  font-size: 40px;
+  color: var(--second-color);
+}
+
+header nav ul {
+  width: 350px;
+  height: 70px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+header nav ul li {
+  /* width: 150px; */
+  height: 100%;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 20px 10px;
+  /* font-family: var(--second-font-merriweather); */
+  font-family: var(--primary-font-amatic);
+  font-weight: 400;
+  line-height: 70px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  outline: none;
+  text-decoration: none;
+}
+
+header nav ul li > a:hover {
+  background-color: var(--second-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: 2px underline;
+}
+
+#home {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  /* background-image: url('../images/paisaje-lago.jpg'); */
+  background-image: url("../images/turtle_and_man.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home #home-info-container {
+  width: 600px;
+  height: 250px;
+  margin-top: 150px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: rgba(33, 37, 41, 0.6);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#home #home-info-container h1 {
+  font-family: var(--primary-font-amatic);
+  line-height: 30px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+#home #home-info-container h3 {
+  margin-top: 30px;
+  font-family: var(--second-font-merriweather);
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+}
+
+#home #home-info-container #home-singup-btn {
+  margin-top: 30px;
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+#home #home-info-container #home-singup-btn a {
+  padding: 10px 22px;
+  font-family: var(--primary-font-amatic);
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+#home #home-info-container #home-singup-btn a:hover {
+  color: var(--primary-color);
+  text-decoration: 2px underline;
+}
+
+#home #home-info-container #home-singup-btn:hover {
+  background-color: var(--second-color);
+  transition: 0.5s;
+}
+
+#about {
+  margin: 0;
+}
+
+#about .about-section {
+  width: 100%;
+  padding: 80px 100px;
+}
+
+#about h2 {
+  font-family: var(--primary-font-amatic);
+  line-height: 50px;
+  font-size: 45px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#about h3 {
+  font-family: var(--primary-font-amatic);
+  line-height: 40px;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 20px;
+  /* margin-bottom: 50px; */
+}
+
+#about h5 {
+  font-family: var(--primary-font-amatic);
+  line-height: 25px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* ABOUT-SECTION | WHO-WE-ARE ============================== */
+#about .who-we-are {
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: var(--primary-color);
+}
+
+#about .who-we-are img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+#about .who-we-are .container-about {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0;
+}
+
+#about .who-we-are .container-about h2 {
+  margin-top: 55px;
+  margin-bottom: 0;
+  color: var(--second-color);
+}
+
+#about .who-we-are div.container-hippo {
+  width: 100%;
+  height: 350px;
+  background-color: var(--primary-color);
+}
+
+#about .who-we-are .fa-hippo {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 50px;
+  border-top: 2px solid var(--second-color);
+  border-bottom: 2px solid var(--second-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  line-height: 50px;
+  font-size: 50px;
+  color: var(--second-color);
+}
+
+#about .who-we-are .container-about p.about-details {
+  width: 100%;
+  padding: 0 100px;
+  font-family: var(--second-font-merriweather);
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+}
+
+/* ABOUT-SECTION | WHAT-WE-ARE ============================== */
+#about .what-we-do {
+  /* background-color: var( --third-color); */
+  background-color: white;
+}
+
+#about .what-we-do .container-actions {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.actions {
+  width: 350px;
+  /* border: 1px solid black; */
+  margin: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#about .what-we-do .actions .action-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.what-we-do p {
+  font-family: var(--second-font-amatic);
+  line-height: 25px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+#galery {
+  padding: 100px 100px;
+  background-color: var(--primary-color);
+}
+
+#galery h2 {
+  text-align: center;
+  font-family: var(--primary-font-amatic);
+  line-height: 50px;
+  font-size: 50px;
+  color: var(--second-color);
+}
+
+#galery h3 {
+  text-align: center;
+  font-family: var(--primary-font-amatic);
+  line-height: 40px;
+  font-size: 30px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+#galery .container-galery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 30px;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+#galery .container-galery a {
+  text-decoration: none;
+}
+
+#galery .category {
+  width: 360px;
+  border: 1px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#galery .category:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+#galery .category img {
+  width: 360px;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.5;
+}
+
+#galery .category:hover > img {
+  width: 120%;
+  background-image: center;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+#galery .category:not(:hover) > img {
+  width: 100%;
+  background-image: center;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+#galery .category h3 {
+  margin-bottom: 0;
+  color: var(--second-color);
+}
+
+#galery .category p {
+  font-family: var(--second-font-merriweather);
+  line-height: 25px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 1200px;
+  padding-top: 600px;
+  background-image: url("../images/tigger.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+footer #contact-us-continer {
+  padding: 0 250px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+footer .details {
+  width: 350px;
+  margin-right: 50px;
+  position: relative;
+}
+
+footer .details .logo {
+  font-size: 40px;
+  color: white;
+  border-bottom: 2px solid var(--second-color);
+}
+
+footer .details .detail-text {
+  margin-top: 50px;
+  font-size: 20px;
+  color: white;
+  text-align: justify;
+}
+
+footer form {
+  width: 350px;
+  margin: 0;
+  border: none;
+  padding-bottom: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  /* justify-content: left; */
+}
+
+footer form label {
+  margin-top: 10px;
+  font-family: var(--primary-font-amatic);
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+footer form input {
+  height: 30px;
+  padding-left: 15px;
+  font-family: var(--second-font-merriweather);
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--primary-color);
+  /* outline: 2px solid var(--second-color); */
+  outline: none;
+}
+
+footer form button {
+  width: 80px;
+  height: 40px;
+  font-family: var(--primary-font-amatic);
+  line-height: 30px;
+  font-size: 20px;
+  color: white;
+  background: transparent;
+}
+
+div.footer {
+  border-top: 1px solid var(--second-color);
+  margin-top: 100px;
+  padding: 20px 200px;
+}
+
+div.footer .company-metas {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid var(--second-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+div.footer .company-metas p {
+  width: 300px;
+  line-height: 40px;
+  font-size: 40px;
+  text-align: left;
+}
+div.footer .company-metas .social-medias {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+}
+div.footer .company-metas .social-medias p {
+  width: 120px;
+  font-family: var(--second-font-merriweather);
+  line-height: 20px;
+  font-size: 18px;
+  color: white;
+}
+div.footer .company-metas .social-medias .social-m {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+div.footer .copyright p {
+  margin-top: 8px;
+  font-family: var(--primary-font-amatic);
+  line-height: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+form#sing-up {
+  width: 350px;
+  height: 450px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 200px;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */

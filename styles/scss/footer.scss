@@ -1,3 +1,4 @@
+// FOOTER STYLES ////////////////////////////////////////////
 footer {
     width: 100%;
     height: 1200px;
@@ -29,17 +30,19 @@ footer .details .logo {
 
     border-bottom: 2px solid var(--second-color);
 }
-/* footer .details .logo span{
-    color: var(--second-color);
-} */
+
 footer .details .detail-text {
-    margin-top: 30px;
-    font-size: 18px;
+    margin-top: 50px;
+    font-size: 20px;
     color: white;
+    text-align: justify;
 }
 
 footer form {
     width: 350px;
+    margin: 0;
+    border: none;
+    padding-bottom: 50px;
 
     display: flex;
     flex-flow: column nowrap;
@@ -83,4 +86,58 @@ footer form button {
     color: white;
     background: transparent;
  
+}
+
+div.footer {
+    border-top: 1px solid var(--second-color);
+    margin-top: 100px;
+    padding: 20px 200px;
+}
+
+div.footer {
+    .company-metas {
+        width: 100%;
+        height: 70px;
+        border-bottom: 1px solid var(--second-color);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+        p {
+            width: 300px;
+            line-height: 40px;
+            font-size: 40px;
+            text-align: left;
+        }
+        .social-medias {
+            // width: 400px;
+            height: 20px;
+            display: flex;
+            flex-direction: row;
+            p {
+                width: 120px;
+                font-family: var(--second-font-merriweather);
+                line-height: 20px;
+                font-size: 18px;
+                color: white;
+            }
+            .social-m {
+                width: 20px;
+                height: 20px;
+                margin-left: 10px;
+            }
+        }
+
+    }
+    .copyright p{
+        margin-top: 8px;
+        font-family: var(--primary-font-amatic);
+        line-height: 20px;
+        font-size: 18px;
+        text-align: center;
+        color: white;
+    }
+
 }
