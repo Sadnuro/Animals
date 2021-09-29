@@ -17,6 +17,9 @@ header {
 
     z-index: 3;
 }
+a.logo-link{
+    text-decoration: none;
+}
 .logo{
     font-family: var( --logo-font-ephesis);
     line-height: 50px;

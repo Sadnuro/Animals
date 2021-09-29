@@ -38,6 +38,7 @@ footer .details .detail-text {
     text-align: justify;
 }
 
+
 footer form {
     width: 350px;
     margin: 0;
@@ -47,57 +48,59 @@ footer form {
     display: flex;
     flex-flow: column nowrap;
     /* justify-content: left; */
+    label {
+        margin-top: 10px;
+        font-family: var(--primary-font-amatic);
+        line-height: 25px;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+    }
+    input {
+        height: 30px;
+        padding-left: 15px;
+        font-family: var(--second-font-merriweather);
+        line-height: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--primary-color);
+        /* outline: 2px solid var(--second-color); */
+        outline: none;
+    }
+    textarea {
+        padding: 5px 10px;
+        font-family: var(--second-font-merriweather);
+        line-height: 20px;
+        font-size: 12px;
+        font-weight: 500;
+    }
 
-}
-
-footer form label {
-    margin-top: 10px;
-
-
-    font-family: var(--primary-font-amatic);
-    line-height: 25px;
-    font-size: 20px;
-    font-weight: 500;
-
-    color: white;
-}
-
-footer form input {
-    height: 30px;
-    padding-left: 15px;
-    
-    font-family: var(--second-font-merriweather);
-    line-height: 20px;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--primary-color);
-
-    /* outline: 2px solid var(--second-color); */
-    outline: none;
-}
-
-footer form button {
-    width: 80px;
-    height: 40px;
-
-    font-family: var(--primary-font-amatic);
-    line-height: 30px;
-    font-size: 20px;
-    color: white;
-    background: transparent;
- 
+    button {
+        width: 80px;
+        height: 40px;
+        margin: 10px auto 0 auto;
+        font-family: var(--primary-font-amatic);
+        line-height: 30px;
+        font-size: 20px;
+        color: white;
+        background: transparent;
+     
+        &:hover {
+            background-color: var(--second-color);
+            color: var(--primary-color);
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
 }
 
 div.footer {
     border-top: 1px solid var(--second-color);
-    margin-top: 100px;
+    margin-top: 70px;
     padding: 20px 200px;
-}
-
-div.footer {
     .company-metas {
         width: 100%;
-        height: 70px;
+        height: 80px;
         border-bottom: 1px solid var(--second-color);
     
         display: flex;
@@ -105,11 +108,15 @@ div.footer {
         align-items: center;
         justify-content: space-between;
     
-        p {
+        p { // Logo Animals
             width: 300px;
             line-height: 40px;
             font-size: 40px;
             text-align: left;
+
+            .fa-hippo {
+                color: var(--second-color);
+            }
         }
         .social-medias {
             // width: 400px;
@@ -118,9 +125,10 @@ div.footer {
             flex-direction: row;
             p {
                 width: 120px;
-                font-family: var(--second-font-merriweather);
+                font-family: var(--primary-font-amatic);
                 line-height: 20px;
-                font-size: 18px;
+                font-size: 24px;
+                font-weight: 500;
                 color: white;
             }
             .social-m {
