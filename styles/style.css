@@ -512,13 +512,101 @@ div.footer .copyright p {
   color: white;
 }
 
-form#sing-up {
+main.registro {
+  padding-top: 100px;
+  width: 100%;
+  height: 100vmin;
+  background-image: url("../../images/amazonia.jpg");
+  background-attachment: fixed;
+}
+main.registro form#sing-up {
   width: 350px;
-  height: 450px;
-  padding: 20px;
+  height: 600px;
   margin: 0 auto;
-  margin-top: 200px;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+main.registro form#sing-up label {
+  margin: 0;
+  font-family: var(--primary-font-amatic);
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+main.registro form#sing-up label#checkbox {
+  font-size: 16px;
+}
+main.registro form#sing-up input {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  font-family: var(--second-font-merriweather);
+  font-size: 14px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  outline: none;
+}
+main.registro form#sing-up input:focus {
+  outline: none;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.7);
+}
+main.registro form#sing-up input:active {
+  outline: none;
+}
+main.registro form#sing-up input#data-usage {
+  width: 15px;
+  height: 15px;
+  margin-left: 3px;
+}
+main.registro form#sing-up select {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 3px;
+  font-family: var(--second-font-merriweather);
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.6);
+}
+main.registro form#sing-up select:focus {
+  outline: none;
+}
+main.registro form#sing-up select:active {
+  outline: none;
+}
+main.registro form#sing-up button {
+  width: 70px;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  outline: none;
+  font-family: var(--primary-font-amatic);
+  font-size: 20px;
+  font-weight: 500;
+}
+main.registro form#sing-up button:hover {
+  background: rgba(33, 37, 41, 0.5);
+  color: var(--second-color);
+}
+main.registro button.return-home {
+  width: 130px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 20px;
   border: 1px solid black;
+  font-family: var(--primary-font-amatic);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  background: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
