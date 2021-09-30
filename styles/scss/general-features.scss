@@ -1,0 +1,113 @@
+main.developers-page {
+    width: 100%;
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../images/BG_FORM_oso-gizzly.jpg');
+
+    .developers-container {
+        width: 1000px;
+        .developer {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 50px;
+            // border: 1px solid black;
+            border-radius: 20px;
+            overflow: hidden;
+            // background: rgba($color: #FFF, $alpha: 0.4);
+            background: rgba(33, 37, 41, 0.5);
+
+            .container-details {
+                width: 500px;
+                padding: 20px;
+                display: inline-block;
+                
+                h3.fullname {
+                    font-family: var(--primary-font-amatic);
+                    line-height: 40px;
+                    font-size: 40px;
+                    margin-bottom: 40px;
+                }
+                p.career {
+                    font-family: var(--primary-font-amatic);
+                    line-height: 30px;
+                    font-size: 20px;
+                }
+                p {
+                    font-family: var(--second-font-merriweather);
+                    .bold {
+                        font-weight: 600;
+                    }
+                }
+                .details {
+                    margin-top: 50px;
+                    font-family: vaar(--second-font-merriweather);
+                    text-align: justify;
+                }
+            }
+            .container-image {
+                width: 450px;
+                height: 400px;
+                overflow: hidden;
+                display: inline-block;
+                img {
+                    width: 100%;
+                    height: 400px;
+                    object-position: top;
+                    object-fit: cover;
+                    
+                }
+            }
+        }
+        .developer-1 {
+            position: relative;
+            .container-details {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                text-align: center;
+            }
+        }
+        .developer-2 {
+            .container-details {
+                float: left;
+                text-align: center;
+            }
+            .container-image {
+                float: right;
+            }
+        }
+    }
+
+    div.return-home {
+        width: 130px;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-bottom-right-radius: 20px;
+        border: 1px solid var(--second-color);
+        background: transparent;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        a {
+            display: block;
+            font-family: var(--primary-font-amatic);
+            line-height: 50px;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                background-color: rgba(33, 37, 41, 0.6);
+                color: var(--second-color);
+                transition: 0.3s;
+            }
+        }
+    }
+}
