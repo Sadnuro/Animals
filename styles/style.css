@@ -584,33 +584,50 @@ main.registro form#sing-up button {
   width: 70px;
   height: 35px;
   margin-top: 15px;
+  margin-left: 50px;
   border-radius: 5px;
   outline: none;
   font-family: var(--primary-font-amatic);
   font-size: 20px;
   font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-weight: bold;
 }
 main.registro form#sing-up button:hover {
   background: rgba(33, 37, 41, 0.5);
   color: var(--second-color);
+  transition: 0.3s;
 }
-main.registro button.return-home {
+main.registro div.return-home {
   width: 130px;
-  height: 60px;
-  position: absolute;
+  height: 50px;
+  position: fixed;
   top: 0;
   left: 0;
   border-bottom-right-radius: 20px;
   border: 1px solid black;
+  background: transparent;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+main.registro div.return-home a {
+  display: block;
   font-family: var(--primary-font-amatic);
+  line-height: 50px;
   font-size: 20px;
   font-weight: 600;
   text-align: center;
-  background: transparent;
+  color: black;
+  text-decoration: none;
+}
+main.registro div.return-home a:hover {
+  background-color: rgba(33, 37, 41, 0.6);
+  color: var(--second-color);
+  transition: 0.3s;
 }
 
 #side-menu {
-  width: 120px;
+  width: 130px;
   height: auto;
   padding: 10px 0;
   position: fixed;
@@ -638,10 +655,14 @@ main.registro button.return-home {
   line-height: 30px;
   color: white;
   padding: 0 20px;
+  text-decoration: none;
 }
 #side-menu ul.container-options li a:hover {
   background-color: var(--primary-color);
   color: var(--second-color);
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */

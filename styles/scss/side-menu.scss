@@ -1,5 +1,5 @@
 #side-menu {
-    width: 120px;
+    width: 130px;
     height: auto;
     padding: 10px 0;
     position: fixed;
@@ -29,10 +29,14 @@
                 line-height: 30px;
                 color: white;
                 padding: 0 20px;
+                text-decoration: none;
 
                 &:hover {
                     background-color: var(--primary-color);
                     color: var(--second-color);
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    transition: 0.3s;
                 }
             }
         }
