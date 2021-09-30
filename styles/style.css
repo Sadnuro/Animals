@@ -665,4 +665,8 @@ main.registro div.return-home a:hover {
   transition: 0.3s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*# sourceMappingURL=style.css.map */

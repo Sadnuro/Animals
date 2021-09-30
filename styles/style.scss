@@ -5,3 +5,8 @@
 @import './scss/footer.scss';
 @import './scss/form.scss';
 @import './scss/side-menu.scss';
+
+
+html {
+    scroll-behavior: smooth;
+}
