@@ -609,4 +609,34 @@ main.registro button.return-home {
   background: transparent;
 }
 
+#side-menu {
+  width: 120px;
+  height: auto;
+  padding: 10px 20px;
+  position: fixed;
+  left: 0;
+  top: 40vmin;
+  z-index: 9;
+  border-radius: 0 10px 10px 0;
+  background-color: rgba(92, 95, 97, 0.5);
+}
+#side-menu ul.container-options {
+  width: 100%;
+  list-style: circle;
+}
+#side-menu ul.container-options li {
+  display: block;
+  height: 30px;
+  text-decoration: none;
+  outline: none;
+  font-family: var(--primary-font-amatic);
+  font-size: 17px;
+  font-weight: 500;
+}
+#side-menu ul.container-options li a {
+  display: block;
+  line-height: 30px;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
