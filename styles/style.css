@@ -612,7 +612,7 @@ main.registro button.return-home {
 #side-menu {
   width: 120px;
   height: auto;
-  padding: 10px 20px;
+  padding: 10px 0;
   position: fixed;
   left: 0;
   top: 40vmin;
@@ -637,6 +637,11 @@ main.registro button.return-home {
   display: block;
   line-height: 30px;
   color: white;
+  padding: 0 20px;
+}
+#side-menu ul.container-options li a:hover {
+  background-color: var(--primary-color);
+  color: var(--second-color);
 }
 
 /*# sourceMappingURL=style.css.map */
