@@ -29,14 +29,17 @@ main.developers-page {
                     line-height: 40px;
                     font-size: 40px;
                     margin-bottom: 40px;
+                    color: var(--second-color);
                 }
                 p.career {
                     font-family: var(--primary-font-amatic);
                     line-height: 30px;
                     font-size: 20px;
+                    color: white;
                 }
                 p {
                     font-family: var(--second-font-merriweather);
+                    color: white;
                     .bold {
                         font-weight: 600;
                     }
@@ -45,6 +48,7 @@ main.developers-page {
                     margin-top: 50px;
                     font-family: vaar(--second-font-merriweather);
                     text-align: justify;
+                    color: white;
                 }
             }
             .container-image {

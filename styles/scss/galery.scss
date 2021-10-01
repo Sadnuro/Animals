@@ -51,11 +51,13 @@
     width: 120%;
     background-image: center;
     object-fit: cover;
+    object-position: center;
     transition: .5s;
 }
 #galery .category:not(:hover) >img{
     width: 100%;
     background-image: center;
+    object-position: center;
     object-fit: cover;
     transition: .5s;
 }

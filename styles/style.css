@@ -349,12 +349,14 @@ header nav ul li > a:hover {
   width: 120%;
   background-image: center;
   object-fit: cover;
+  object-position: center;
   transition: 0.5s;
 }
 
 #galery .category:not(:hover) > img {
   width: 100%;
   background-image: center;
+  object-position: center;
   object-fit: cover;
   transition: 0.5s;
 }
@@ -695,14 +697,17 @@ main.developers-page .developers-container .developer .container-details h3.full
   line-height: 40px;
   font-size: 40px;
   margin-bottom: 40px;
+  color: var(--second-color);
 }
 main.developers-page .developers-container .developer .container-details p.career {
   font-family: var(--primary-font-amatic);
   line-height: 30px;
   font-size: 20px;
+  color: white;
 }
 main.developers-page .developers-container .developer .container-details p {
   font-family: var(--second-font-merriweather);
+  color: white;
 }
 main.developers-page .developers-container .developer .container-details p .bold {
   font-weight: 600;
@@ -711,6 +716,7 @@ main.developers-page .developers-container .developer .container-details .detail
   margin-top: 50px;
   font-family: vaar(--second-font-merriweather);
   text-align: justify;
+  color: white;
 }
 main.developers-page .developers-container .developer .container-image {
   width: 450px;
