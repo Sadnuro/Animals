@@ -1,0 +1,128 @@
+// ABOUT STYLES ////////////////////////////////////////////
+#about {
+    margin: 0;
+}
+#about .about-section{
+    width: 100%;
+    padding: 80px 100px;
+}
+#about h2 {
+    font-family: var(--primary-font-amatic);
+    line-height: 50px; 
+    font-size:  45px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#about h3 {
+    font-family: var(--primary-font-amatic);
+    line-height: 40px; 
+    font-size:  35px;
+    text-align: center;
+    margin-top: 20px;
+    /* margin-bottom: 50px; */
+}
+#about h5 {
+    font-family: var(--primary-font-amatic);
+    line-height: 25px; 
+    font-size:  20px;
+    text-align: center;
+    margin-top: 5px;
+}
+/* ABOUT-SECTION | WHO-WE-ARE ============================== */
+#about .who-we-are {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--primary-color);
+    
+ }
+ #about .who-we-are img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#about .who-we-are .container-about{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0;
+}
+#about .who-we-are .container-about h2{
+    margin-top: 55px;
+    margin-bottom: 0;
+    color: var(--second-color);
+}
+#about .who-we-are div.container-hippo {
+    width: 100%;
+    height: 350px;
+    background-color: var(--primary-color);
+}
+#about .who-we-are .fa-hippo {
+    width: 100%;
+    height: 70px;
+
+    margin-bottom: 50px;
+
+    border-top: 2px solid var(--second-color);
+    border-bottom: 2px solid var(--second-color);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 50px;
+    font-size: 50px;
+    color: var(--second-color)
+}
+
+#about .who-we-are .container-about p.about-details{
+    width: 100%;
+    padding: 0 100px;
+
+    font-family: var(--second-font-merriweather);
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+}
+
+/* ABOUT-SECTION | WHAT-WE-ARE ============================== */
+
+#about .what-we-do {
+    /* background-color: var( --third-color); */
+    background-color: white;
+}
+#about .what-we-do .container-actions{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.actions {
+    width: 350px;
+    /* border: 1px solid black; */
+    margin: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+#about .what-we-do .actions .action-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.what-we-do p {
+    font-family: var(--second-font-amatic);
+    line-height: 25px; 
+    font-size:  20px;
+    text-align: center;
+    margin-top: 25px;
+}

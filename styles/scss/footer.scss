@@ -1,0 +1,151 @@
+// FOOTER STYLES ////////////////////////////////////////////
+footer {
+    width: 100%;
+    height: 1200px;
+
+    padding-top: 600px;
+
+    background-image: url('../images/tigger.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer #contact-us-continer{
+    padding: 0 250px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items:flex-start;  
+    justify-content: space-around;  
+}
+
+footer .details {
+    width: 350px;
+    margin-right: 50px;
+    position: relative;
+}
+footer .details .logo {
+    font-size: 40px;
+    color: white;
+
+    border-bottom: 2px solid var(--second-color);
+}
+
+footer .details .detail-text {
+    margin-top: 50px;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}
+
+
+footer form {
+    width: 350px;
+    margin: 0;
+    border: none;
+    padding-bottom: 50px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: left; */
+    label {
+        margin-top: 10px;
+        font-family: var(--primary-font-amatic);
+        line-height: 25px;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+    }
+    input {
+        height: 30px;
+        padding-left: 15px;
+        font-family: var(--second-font-merriweather);
+        line-height: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--primary-color);
+        /* outline: 2px solid var(--second-color); */
+        outline: none;
+    }
+    textarea {
+        padding: 5px 10px;
+        font-family: var(--second-font-merriweather);
+        line-height: 20px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    button {
+        width: 80px;
+        height: 40px;
+        margin: 10px auto 0 auto;
+        font-family: var(--primary-font-amatic);
+        line-height: 30px;
+        font-size: 20px;
+        color: white;
+        background: transparent;
+     
+        &:hover {
+            background-color: var(--second-color);
+            color: var(--primary-color);
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
+
+div.footer {
+    border-top: 1px solid var(--second-color);
+    margin-top: 70px;
+    padding: 20px 200px;
+    .company-metas {
+        width: 100%;
+        height: 80px;
+        border-bottom: 1px solid var(--second-color);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+        p { // Logo Animals
+            width: 300px;
+            line-height: 40px;
+            font-size: 40px;
+            text-align: left;
+
+            .fa-hippo {
+                color: var(--second-color);
+            }
+        }
+        .social-medias {
+            // width: 400px;
+            height: 20px;
+            display: flex;
+            flex-direction: row;
+            p {
+                width: 120px;
+                font-family: var(--primary-font-amatic);
+                line-height: 20px;
+                font-size: 24px;
+                font-weight: 500;
+                color: white;
+            }
+            .social-m {
+                width: 20px;
+                height: 20px;
+                margin-left: 10px;
+            }
+        }
+
+    }
+    .copyright p{
+        margin-top: 8px;
+        font-family: var(--primary-font-amatic);
+        line-height: 20px;
+        font-size: 18px;
+        text-align: center;
+        color: white;
+    }
+
+}

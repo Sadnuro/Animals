@@ -1,0 +1,122 @@
+header {
+    width: 100%;
+    height: 70px;
+    padding: 0 150px 0 150px;
+
+    border-bottom: 2px solid var(--second-color);
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 3;
+}
+a.logo-link{
+    text-decoration: none;
+}
+.logo{
+    font-family: var( --logo-font-ephesis);
+    line-height: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+header p .fa-hippo{
+    font-size: 40px;
+    color: var(--second-color);
+}
+header nav ul {
+    width: 350px;
+    height: 70px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+header nav ul li {
+    /* width: 150px; */
+    height: 100%;
+    list-style: none;
+}
+header nav ul li a{
+    padding: 20px 10px;
+    /* font-family: var(--second-font-merriweather); */
+    font-family: var(--primary-font-amatic);
+    font-weight: 400;
+    line-height: 70px;
+    font-size: 20px;
+
+    text-align: center;
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+header nav ul li>a:hover{
+    background-color: var(--second-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    // text-decoration: 2px underline;
+}
+details.category-details {
+    &[open] summary{
+        background-color: var(--second-color);
+        color: var(--primary-color);
+        font-weight: bold;
+        cursor: pointer; 
+    }
+    summary {
+        padding: 20px 10px;
+        font-family: var(--primary-font-amatic);
+        list-style: none;
+        font-weight: 400;
+        font-size: 20px;
+        color: white;
+
+        &:hover {
+            background-color: var(--second-color);
+            color: var(--primary-color);
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+    }
+    summary:before {
+        content: 'CATEGORIAS ';
+    }
+
+    ul {
+        width: 300px;
+        height: auto;
+        position: absolute;
+        top: 72px;
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: var(--primary-color);
+        border: 1px solid var(--second-color);
+
+        li {
+            width: 100%;
+            height: 40px;
+            // border-bottom: 1px solid white;
+            a {
+                display: block;
+                padding: 0;
+                padding-left: 20px;
+                line-height: 40px;
+                font-family: var(--primary-font-amatic);
+                text-align: left;
+
+                &:hover {
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}

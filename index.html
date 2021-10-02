@@ -5,25 +5,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles/home.css">
+    <script src="https://kit.fontawesome.com/58c568702d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Animals</title>
 </head>
 <body>
     <header>
-        <p>Animals</p>
+        <a class="logo-link" href="./index.html">
+            <p id="logo" class="logo"><i class="fas fa-hippo"></i> Animals</p>
+        </a>
         <nav>
             <ul>
-                <li>Registrarse</li>
-                <li>Desarrolladores</li>
-                <li>Acerca de</li>
+                <li><a href="./registro.html">REGISTRARSE</a></li>
+                <!-- <i class="fas fa-bars"></i> -->
+                <!-- <li> -->
+                    <!-- <a href="./galerias.html">CATEGORIAS</i></a> -->
+                    <details class="category-details">
+                        <summary></summary>
+                        <ul class="category-menu">
+                            <li><a href="./galerias.html#birds">AVES</a></li>
+                            <li><a href="./galerias.html#canines">CANINOS</a></li>
+                            <li><a href="./galerias.html#felines">FELINOS</a></li>
+                            <li><a href="./galerias.html#fishes">PECES Y ANIMALES ACUATICOS</a></li>
+                            <li><a href="./galerias.html#prehistoric">PREHISTORICOS</a></li>
+                            <li><a href="./galerias.html#endangered">EN VIA DE EXTINCION</a></li>
+                        </ul>
+                    </details>
+                <!-- </li> -->
+                <li><a href="./aspectosgenerales.html">DESARROLLADORES</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <div id="side-menu">
+            <ul class="container-options">
+                <li><a href="#home">INICIO</a></li>
+                <li><a href="#who-we-are">NOSOTROS</a></li>
+                <li><a href="#what-we-do">LO QUE HACEMOS</a></li>
+                <li><a href="#galery">CATEGORIAS</a></li>
+                <li><a href="#contact-us-continer">CONTACTANOS</a></li>
+            </ul>
+        </div>
+        <section id="home">
+            <!-- <img src="./images/paisaje-lago.jpg" alt="paisaje.jpg"> -->
+            <div id="home-info-container">
+                <h1>BUSCA, DESCUBRE Y APRENDE SOBRE ANIMALES</h1>
+                <h3>Animate a resgistrarte y recibe noticias sobre nuevas galerias y articulos de tu interes</h3>
+                <button type="button" id="home-singup-btn"><a href="registro.html">Registrarme</a></button>
+            </div>
+        </section>
+        <section id="about">
+            <div id="who-we-are" class="about-section who-we-are">
+                <img src="./images/puerco_spin_2.jpg" alt="">
+                <div class="container-about">
+                    <h2>QUE  ES  <span class="logo">Animals</span>  ?</h2>
+                    <div class="container-hippo">
+                        <i class="fas fa-hippo"></i>
+                        <p class="about-details">
+                            Somos un grupo de activistas ambientales enfocados en la fauna de nuestra madre tierra. 
+                            Apasionados por la vida animal y sus ecosistemas, preocupados por la biodiversidad y 
+                            la educación ecológica, interesados en ampliar el conocimiento de aquellos seres 
+                            vivos al servicio de la humanidad.
+                        </p>
+                    </div>
+                </div>
 
+            </div>
+            <div id="what-we-do" class="about-section what-we-do">
+                <h2>LO QUE HACEMOS...</h2>
+                <div class="container-actions">
+                    <div class="actions action-1">
+                        <img class="action-img action1-img" src="./images/john bozinov.png" alt="">
+                        <h3>INVESTIGAMOS</h3>
+                        <h5>Inmersion en habitats natuales</h5>
+                        <p>Tomamos el riesgo de observar, monitorear y documentar distintas especies en su entorno natural</p>
+                    </div>
+                    <div class="actions action-2">
+                        <img class="action-img action2-img" src="./images/city.jpg" alt="">
+                        <h3>PUBLICAMOS</h3>
+                        <h5>ARTICULOS, VIDEO-DOCUMENTALES Y GALERIAS</h5>
+                        <p>Buscamos brindar informacion de calidad en varios formatos para tu comodidad</p>
+                    </div>
+                    <div class="actions action-3">
+                        <img class="action-img action3-img" src="./images/iguana.jpg" alt="">
+                        <h3>CONCIENTIZAMOS</h3>
+                        <h5>ECOSISTEMAS, ANIMALES SALVAJES Y DOMESTICOS</h5>
+                        <p>Recopilamos informacion y normativas vigentes en cada pais para la proteccion de animales y ecosistemas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="galery">
+            <h2>GALERIA</h2>
+            <h3>Ingresa a la categoria de tu interes</h3>
+            <div class="container-galery">
+                <a href="#">
+                    <div class="category category-1" >
+                        <img src="./images/categories/birds/colibri.jpeg" alt="" class="topic-img">
+                        <h3>AVES</h3>
+                        <P>Habitats, curiosidades y mucha info importante sobre algunos tipos de aves</P>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category category-1" >
+                        <img src="./images/categories/canines/lobo-siberiano.jpg" alt="" class="topic-img">
+                        <h3>CANINOS</h3>
+                        <P>Enterate de las seis especies mas interesantes de perros</P>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category category-1" >
+                        <!-- <img src="./images/categories/felines/jaguar.png" alt="" class="topic-img"> -->
+                        <img src="./images/mountains.jpg" alt="" class="topic-img">
+                        <h3>FELINOS</h3>
+                        <P>Los felinos suelen ser peligrosos, pero algunos son domesticos, enterate!</P>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category category-1" >
+                        <img src="./images/categories/peces_animales_acuaticos/goldfish.jpg" alt="" class="topic-img">
+                        <h3>PECES Y ANIMALES ACUATICOS</h3>
+                        <P>Los hay pequenos, peligrosos y gigantescos, conocelos!</P>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category category-1" >
+                        <img src="./images/categories/prehistoricos/triceratop.jpg" alt="" class="topic-img">
+                        <h3>PREHISTORICOS</h3>
+                        <P>Enterate de especies interesantes que dejaron de existir</P>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category category-1" >
+                        <img src="./images/categories/via_extincion/oso-polar.jpg" alt="" class="topic-img">
+                        <h3>EN VIA DE EXTINCION</h3>
+                        <P>Animales que estan en peligro de desaparecer y sus motivos</P>
+                    </div>
+                </a>
+
+            </div>
+        </section>
     </main>
     <footer>
+        <div id="contact-us-continer">
+            <div class="details">
+                <p class="logo">Animals <span>| Support contact</span></p>
+                <p class="detail-text">
+                    Estamos para servirte, si tienes alguna duda o sugerencia contactanos y cuentanos que te parecen nuestros servicios. 
+                    <br> <br>
+                    Recibiremos un mensaje directo a nuestros canales de atencion; no tardaremos en responderte.
+                </p>
+            </div>
+            <form action="#" class="contact-us">
+                <label for="fullname">Nombre completo*</label>
+                <input id="fullname" type="text" placeholder="Maria Apellido">
 
+                <label for="email">Email*</label>
+                <input id="email" type="email" placeholder="Maria@email.com">
+
+                <label for="comment">Cuentanos: </label>
+                <textarea name="comment" id="comment" cols="40" rows="4" placeholder="Comment..."></textarea>
+
+                <button type="submit">CONTACTAR</button>
+
+            </form>
+        </div>
+        <div class="footer">
+            <div class="company-metas">
+                <p id="logo" class="logo"><i class="fas fa-hippo"></i> Animals</p>
+                <div class="social-medias">
+                    <p>Siguenos: </p>
+                    <a href="https://www.facebook.com">
+                        <img src="./images/social-medias/fb.png" alt="fb icon" class="social-m fb">
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <img src="./images/social-medias/twitter.png" alt="twitter icon" class="social-m tw">
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <img src="./images/social-medias/insta.png" alt="" class="social-m it">
+                    </a>
+                    <a href="https://www.youtube.com">
+                        <img src="./images/social-medias/yt.png" alt="" class="social-m yt">
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Develop by: Sadith Nunez R, Valentina Castaneda</p>
+                <p>Copyright Animals 2021 ©</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
