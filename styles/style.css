@@ -568,7 +568,7 @@ main.registro {
   padding-top: 100px;
   width: 100%;
   height: 100vmin;
-  background-image: url("../../images/amazonia.jpg");
+  background-image: url("../images/amazonia.jpg");
   background-attachment: fixed;
 }
 main.registro form#sing-up {
@@ -724,7 +724,7 @@ main.developers-page {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../../images/BG_FORM_oso-gizzly.jpg");
+  background-image: url("../images/BG_FORM_oso-gizzly.jpg");
 }
 main.developers-page .developers-container {
   width: 1000px;
