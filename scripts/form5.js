@@ -3,7 +3,7 @@ function validar_confirmar_correo (original, toConfirm) {
     if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(original) 
     &&  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(toConfirm) ) {
         // Verify mails
-        if(original === toconfirm){
+        if(original === toConfirm){
             return true;
         }
     }
@@ -20,7 +20,3 @@ function validar_pais (pais) {
 
 module.exports.validar_confirmar_correo = validar_confirmar_correo;
 module.exports.validar_pais = validar_pais;
-
-
-    // 2 == "2" > true
-    // 2 === 2 > true
