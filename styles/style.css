@@ -178,7 +178,7 @@ details.category-details ul li a:hover {
   color: white;
 }
 
-#home #home-info-container #home-singup-btn {
+#home #home-info-container #button_principal {
   margin-top: 30px;
   width: 130px;
   height: 40px;
@@ -186,7 +186,7 @@ details.category-details ul li a:hover {
   background: transparent;
 }
 
-#home #home-info-container #home-singup-btn a {
+#home #home-info-container #button_principal a {
   padding: 10px 22px;
   font-family: var(--primary-font-amatic);
   font-size: 22px;
@@ -196,12 +196,12 @@ details.category-details ul li a:hover {
   color: white;
 }
 
-#home #home-info-container #home-singup-btn a:hover {
+#home #home-info-container #button_principal a:hover {
   color: var(--primary-color);
   text-decoration: 2px underline;
 }
 
-#home #home-info-container #home-singup-btn:hover {
+#home #home-info-container #button_principal:hover {
   background-color: var(--second-color);
   transition: 0.5s;
 }
